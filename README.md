@@ -17,7 +17,7 @@ My Website
 
 
 Original Repo    
-[vital987](https://github.com/vital987/vubuntu)
+[vital987](https://github.com/vital987/vubuntu)    
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/akuhnet/hero-vps-lifetime)
