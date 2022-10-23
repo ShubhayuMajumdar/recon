@@ -1,7 +1,9 @@
-
+//Knapsack Problem
 #include<stdio.h>
 #include<stdlib.h>
- 
+
+// Returns the maximum value that
+// can be put in a knapsack of capacity W
 void knapsack(int n, float weight[], float profit[], float capacity) 
 {
     float x[20], tp = 0;
@@ -33,7 +35,8 @@ void knapsack(int n, float weight[], float profit[], float capacity)
     }
     printf("\nMaximum profit is: %f", tp);
 }
- 
+
+//Driver Function
 int main() 
 {
     float weight[20], profit[20], capacity;
@@ -53,7 +56,11 @@ int main()
     {
         scanf("%f",&profit[i]);
     }
-
+    // If weight of the nth item is more
+    // than Knapsack capacity W, then
+    // this item cannot be included
+    // in the optimal solution
+    
     printf("\nEnter the capacity of knapsack:\n");
     scanf("%f", &capacity);
     for (i = 0; i < num; i++) 
