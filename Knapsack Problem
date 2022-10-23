@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 
-void knapsack_func(int n, float weight[], float profit[], float capacity) 
+void knapsack(int n, float weight[], float profit[], float capacity) 
 {
     float x[20], tp = 0;
     int i, j, u;
@@ -86,6 +86,6 @@ int main()
             }
         }
     }
-    knapsack_func(num, weight, profit, capacity);
+    knapsack(num, weight, profit, capacity);
     return(0);
 }
