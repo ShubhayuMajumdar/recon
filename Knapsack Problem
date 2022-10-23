@@ -39,7 +39,7 @@ int main()
 {
     float weight[200], profit[200], capacity;
     int num, i, j;
-    float ratio[200], flag;
+    float ratio[200], temp;
  
     printf("\nEnter the no. of objects: ");
     scanf("%d", &num);
@@ -72,17 +72,17 @@ int main()
         {
             if (ratio[i] < ratio[j]) 
             {
-                flag = ratio[j];
+                temp = ratio[j];
                 ratio[j] = ratio[i];
-                ratio[i] = flag;
+                ratio[i] = temp;
  
-                flag = weight[j];
+                temp = weight[j];
                 weight[j] = weight[i];
-                weight[i] = flag;
+                weight[i] = temp;
  
-                flag = profit[j];
+                temp = profit[j];
                 profit[j] = profit[i];
-                profit[i] = flag;
+                profit[i] = temp;
             }
         }
     }
