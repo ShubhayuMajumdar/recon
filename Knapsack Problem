@@ -2,8 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// Returns the maximum value that
-// can be put in a knapsack of capacity W
+
 void knapsack_func(int n, float weight[], float profit[], float capacity) 
 {
     float x[20], tp = 0;
@@ -36,7 +35,6 @@ void knapsack_func(int n, float weight[], float profit[], float capacity)
     printf("\nMaximum profit is: %f", tp);
 }
 
-//Driver Function
 int main() 
 {
     float weight[200], profit[200], capacity;
