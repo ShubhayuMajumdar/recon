@@ -4,7 +4,7 @@
 
 // Returns the maximum value that
 // can be put in a knapsack of capacity W
-void knapsack(int n, float weight[], float profit[], float capacity) 
+void knapsack_func(int n, float weight[], float profit[], float capacity) 
 {
     float x[20], tp = 0;
     int i, j, u;
@@ -39,9 +39,9 @@ void knapsack(int n, float weight[], float profit[], float capacity)
 //Driver Function
 int main() 
 {
-    float weight[20], profit[20], capacity;
+    float weight[200], profit[200], capacity;
     int num, i, j;
-    float ratio[20], temp;
+    float ratio[200], temp;
  
     printf("\nEnter the no. of objects: ");
     scanf("%d", &num);
@@ -88,6 +88,6 @@ int main()
             }
         }
     }
-    knapsack(num, weight, profit, capacity);
+    knapsack_func(num, weight, profit, capacity);
     return(0);
 }
